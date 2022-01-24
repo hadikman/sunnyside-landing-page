@@ -5,8 +5,248 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SunnySide Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-32x32.png" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <!-- <script src='main.js'></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <section class="header w-100">
+      <nav class="navbar p-4">
+        <img src="./assets/logo.svg" alt="logo" class="logo" />
+        <div class="mobile-menu d-sm-none">
+          <input type="checkbox" class="menu-checkbox" />
+          <img
+            src="./assets/icon-hamburger.svg"
+            alt="menu icon"
+            class="menu-icon"
+          />
+          <div class="menu-overlay">
+            <a href="#" class="menu-overlay-link">About</a>
+            <a href="#" class="menu-overlay-link">Services</a>
+            <a href="#" class="menu-overlay-link">Projects</a>
+            <a href="#" class="menu-overlay-link active">Contact</a>
+          </div>
+        </div>
+        <div
+          class="desktop-menu d-none d-sm-flex justify-content-between align-items-center"
+        >
+          <a href="#" class="navbar-link fs-6 text-light text-decoration-none"
+            >About</a
+          >
+          <a href="#" class="navbar-link fs-6 text-light text-decoration-none"
+            >Services</a
+          >
+          <a href="#" class="navbar-link fs-6 text-light text-decoration-none"
+            >Projects</a
+          >
+          <a
+            href="#"
+            data-contact="link"
+            class="navbar-link active fs-6 text-decoration-none"
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <h1 class="header-title text-center">we are creatives</h1>
+      <img
+        src="./assets/icon-arrow-down.svg"
+        alt="arrow icon"
+        class="arrow-icon d-block mx-auto"
+      />
+    </section>
+    <main class="first row g-0">
+      <section class="first-transform-container d-sm-flex g-0">
+        <picture class="col-sm-6 order-2">
+          <source
+            media="(min-width:576px)"
+            srcset="./assets/desktop/image-transform.jpg"
+          />
+          <img
+            src="./assets/mobile/image-transform.jpg"
+            alt="an egg"
+            class="first-transform-img img-fluid"
+          />
+        </picture>
+        <article class="first-transform-text col-sm-6 order-1">
+          <h2 class="first-transform-title">Transform your brand</h2>
+          <p class="first-transform-description">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a class="first-transform-link">learn more</a>
+        </article>
+      </section>
+      <section class="first-stand-out-container row row-cols-sm-2 g-0">
+        <picture class="">
+          <source
+            media="(min-width:576px)"
+            srcset="./assets/desktop/image-stand-out.jpg"
+          />
+          <img
+            src="./assets/mobile/image-stand-out.jpg"
+            alt="a cup"
+            class="first-transform-img img-fluid"
+          />
+        </picture>
+        <article class="first-stand-out-text col-sm-6">
+          <h2 class="first-stand-out-title">Stand out to the right audience</h2>
+          <p class="first-stand-out-description">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <a class="first-stand-out-link">learn more</a>
+        </article>
+      </section>
+      <section class="first-graphic-design col-sm-6">
+        <h2 class="first-graphic-design-title">Graphic Design</h2>
+        <p class="first-graphic-design-description">
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients' attention.
+        </p>
+      </section>
+      <section class="first-photography col-sm-6">
+        <h2 class="first-photography-title">Photography</h2>
+        <p class="first-photography-description">
+          Increase your credibility by getting the most stunning, hight-quality
+          photos that improve your business image.
+        </p>
+      </section>
+    </main>
+    <main class="second d-sm-flex flex-wrap">
+      <h2 class="second-title w-100">Client Testimonials</h2>
+      <section class="second-testimonial col-sm-4">
+        <img
+          src="./assets/image-emily.jpg"
+          alt="emily"
+          class="second-testimonial-image"
+        />
+        <p class="second-testimonial-description">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <h4 class="second-testimonial-name">Emily R.</h4>
+        <span class="second-testimonial-job">marketing director</span>
+      </section>
+      <section class="second-testimonial col-sm-4">
+        <img
+          src="./assets/image-thomas.jpg"
+          alt="emily"
+          class="second-testimonial-image"
+        />
+        <p class="second-testimonial-description">
+          Sunnyside's enthusiasm coupled with their keen interest in our brand's
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h4 class="second-testimonial-name">Thomas S.</h4>
+        <span class="second-testimonial-job">chief operating officer</span>
+      </section>
+      <section class="second-testimonial col-sm-4">
+        <img
+          src="./assets/image-jennie.jpg"
+          alt="emily"
+          class="second-testimonial-image"
+        />
+        <p class="second-testimonial-description">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h4 class="second-testimonial-name">Jennie F.</h4>
+        <span class="second-testimonial-job">buisness owner</span>
+      </section>
+    </main>
+    <main class="third row row-sm-cols-4 g-0 p-0">
+      <picture class="col-6 col-sm-3">
+        <source
+          media="(min-width:576px)"
+          srcset="./assets/desktop/image-gallery-milkbottles.jpg"
+        />
+        <img
+          src="./assets/mobile/image-gallery-milkbottles.jpg"
+          alt="milk bottle"
+          class="w-100"
+        />
+      </picture>
+      <picture class="col-6 col-sm-3">
+        <source
+          media="(min-width:576px)"
+          srcset="./assets/desktop/image-gallery-orange.jpg"
+        />
+        <img
+          src="./assets/mobile/image-gallery-orange.jpg"
+          alt="orange"
+          class="w-100"
+        />
+      </picture>
+      <picture class="col-6 col-sm-3">
+        <source
+          media="(min-width:576px)"
+          srcset="./assets/desktop/image-gallery-cone.jpg"
+        />
+        <img
+          src="./assets/mobile/image-gallery-cone.jpg"
+          alt="cone"
+          class="w-100"
+        />
+      </picture>
+      <picture class="col-6 col-sm-3">
+        <source
+          media="(min-width:576px)"
+          srcset="./assets/desktop/image-gallery-sugarcubes.jpg"
+        />
+        <img
+          src="./assets/mobile/image-gallery-sugar-cubes.jpg"
+          alt="sugar cubes"
+          class="w-100"
+        />
+      </picture>
+    </main>
+    <footer class="footer">
+      <img
+        src="./assets/logo-footer.svg"
+        alt="footer logo"
+        class="footer-logo d-block mx-auto"
+      />
+      <nav
+        class="footer-nav d-flex justify-content-around justify-content-sm-between mx-auto"
+      >
+        <a href="#" class="footer-nav-link">About</a>
+        <a href="#" class="footer-nav-link">Services</a>
+        <a href="#" class="footer-nav-link">Projects</a>
+      </nav>
+      <nav class="footer-social d-flex justify-content-evenly mx-auto">
+        <img
+          src="./assets/icon-facebook.svg"
+          alt="facebook"
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/icon-instagram.svg"
+          alt="instagram"
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/icon-twitter.svg"
+          alt="twitter"
+          class="footer-social-icon"
+        />
+        <img
+          src="./assets/icon-pinterest.svg"
+          alt="pinterest"
+          class="footer-social-icon"
+        />
+      </nav>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
